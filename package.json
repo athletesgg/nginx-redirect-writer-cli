@@ -1,0 +1,31 @@
+{
+  "name": "nginx-redirect-writer-cli",
+  "version": "1.0.0",
+  "description": "Turn a CSV of new and old URLs into NginX rewrite rules.",
+  "bin": {
+    "nginx-redirect-writer-cli": "./bin/cli.js",
+    "nginx-redirect-writer": "./bin/cli.js",
+    "nrw": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-experiments/nginx-redirect-writer.git"
+  },
+  "keywords": [
+    "nginx",
+    "redirect",
+    "csv",
+    "automate"
+  ],
+  "author": "Martin Experiments LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martin-experiments/nginx-redirect-writer/issues"
+  },
+  "homepage": "https://github.com/martin-experiments/nginx-redirect-writer#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "csv-parse": "^1.1.5",
+    "fast-csv": "^2.1.0"
+  }
+}
