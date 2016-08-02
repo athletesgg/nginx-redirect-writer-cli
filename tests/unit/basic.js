@@ -17,6 +17,8 @@ const test1 = {
     , [`${URL}/old2`, `${URL}/new2`]
     , [`${URL}/mew`, `${URL}/mew2`]
     , [`${URL}/same`, `${URL}/same`]
+    , [`${URL}/slash/`, `${URL}/slash`]
+    , [`${URL}/params?test=true`, `${URL}/test`]
     ]
   }
 , rules: {
@@ -24,6 +26,7 @@ const test1 = {
       `rewrite ^/old?$ ${URL}/new permanent;`
     , `rewrite ^/old2?$ ${URL}/new2 permanent;`
     , `rewrite ^/mew?$ ${URL}/mew2 permanent;`
+    , `rewrite ^/params?$ ${URL}/test permanent;`
     ]
   }
 }
