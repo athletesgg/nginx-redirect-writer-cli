@@ -16,3 +16,9 @@ $
 $ # Example:
 $ nrw my-redirects.csv my-redirects.conf
 ```
+
+## License
+
+Copyright (c) 2016 Martin Experiments LLC
+
+MIT (https://www.opensource.org/licenses/MIT)
