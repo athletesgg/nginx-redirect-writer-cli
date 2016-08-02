@@ -1,6 +1,6 @@
 {
   "name": "nginx-redirect-writer-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Turn a CSV of new and old URLs into NginX rewrite rules.",
   "bin": {
     "nginx-redirect-writer-cli": "./bin/cli.js",
