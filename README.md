@@ -1,4 +1,5 @@
 # NginX Redirect Writer CLI
+[![Build Status](https://travis-ci.org/martin-experiments/nginx-redirect-writer-cli.svg?branch=master)](https://travis-ci.org/martin-experiments/nginx-redirect-writer-cli)
 
 Turn a CSV of new and old URLs into NginX rewrite rules.
 

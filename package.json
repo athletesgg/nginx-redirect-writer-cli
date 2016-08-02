@@ -7,6 +7,10 @@
     "nginx-redirect-writer": "./bin/cli.js",
     "nrw": "./bin/cli.js"
   },
+  "scripts": {
+    "lint": "./scripts/lint",
+    "test": "./scripts/test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/martin-experiments/nginx-redirect-writer.git"
@@ -27,5 +31,8 @@
     "commander": "^2.9.0",
     "csv-parse": "^1.1.5",
     "fast-csv": "^2.1.0"
+  },
+  "devDependencies": {
+    "tap": "^6.2.0"
   }
 }

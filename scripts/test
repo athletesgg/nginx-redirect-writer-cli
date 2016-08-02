@@ -1,0 +1,20 @@
+#!/bin/bash
+
+printf "Running tests:\n\n"
+
+./scripts/lint
+lintResult=$?
+
+printf "Running tap tests:\n\n"
+INVALID_REQUIRED_VAR=red \
+INVALID_OPTIONAL_VAR=style \
+REQUIRED_VAR="taylor swift" \
+OPTIONAL_VAR=1989 \
+VALID_REQUIRED_VAR="sparks fly" \
+VALID_OPTIONAL_VAR=enchanted \
+  tap tests/**/*.js -Rlist
+tapResult=$?
+
+echo "Finished tests."
+
+! (( $tapResult | $lintResult ))
