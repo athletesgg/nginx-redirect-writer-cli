@@ -33,6 +33,7 @@
     "fast-csv": "^2.1.0"
   },
   "devDependencies": {
+    "eslint": "^3.2.2",
     "tap": "^6.2.0"
   }
 }
