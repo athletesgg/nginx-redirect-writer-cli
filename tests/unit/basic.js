@@ -29,7 +29,7 @@ const test1 = {
     , `rewrite ^/mew?$ ${URL}/mew2 permanent;`
     , `rewrite ^/slash/?$ ${URL}/slash permanent;`
     , `rewrite ^/params?$ ${URL}/test permanent;`
-    , `rewrite ^/?$ ${URL}/root permanent;`
+    , `rewrite ^(.*)$ ${URL}/root permanent;`
     ]
   }
 }
